@@ -13,7 +13,7 @@ Repozytorium przeznaczone projektom na przedmiot ZSO realizowanego w ramach nauk
 
 - Projekt 1- W trakcie
 
-- Projekt 2- TBA
+- Projekt TBA
 
 - Projekt 3- TBA
 
