@@ -1,0 +1,1 @@
+Wywalić grupy. Po przypisaniu stolika grupa idzie w niepamięć i obchodzi mnie tylko stolik
