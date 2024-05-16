@@ -82,11 +82,12 @@ void* waiter_function(void* arg) {
             }
         }
         if(waiter_id == 0){
-                 #ifdef sleeps
+                
+                #ifdef sleeps
                 sleep(1);
                 #endif
                 #ifdef prints
-                // printf("Kelner idzie do kasy\n");
+                printf("Kelner idzie do kasy\n");
                 #endif
                 pthread_cond_broadcast(&cash);
             }
@@ -105,12 +106,12 @@ void* client_function(void* arg) {
     pthread_cond_wait(&groups[group_id].allow_entry, &groups[group_id].lock);
     pthread_mutex_unlock(&groups[group_id].lock);
     table_id = groups[group_id].table_id;
-     #ifdef prints
+    #ifdef prints
     printf("Klient z grupy %d wpuszczony do stolika %d\n", group_id,table_id);
     #endif
     #ifdef sleeps
-    sleep(5);
-    #endif
+                sleep(3);
+                #endif
     #ifdef prints
     printf("Klient z stolika %d idzie zapłacić\n",table_id);
     #endif
@@ -129,7 +130,7 @@ void* client_function(void* arg) {
     return NULL;
 }
 
-int main() {
+void projekt_zso(){
     pthread_t waiters[NUM_WAITERS];
     int waiter_ids[NUM_WAITERS];
     int client_ids[MAX_CLIENTS];
@@ -137,14 +138,12 @@ int main() {
 
     pthread_mutex_init(&cash_lock, NULL);
 
-    // Inicjalizuj stoliki
     for (int i = 0; i < NUM_TABLES; i++) {
         pthread_mutex_init(&tables[i].lock, NULL);
         tables[i].waiter_id = -1;
         tables[i].paid = 0;
     }
 
-    // Utwórz grupy
     for (int i = 0; i < MAX_CLIENTS;) {
         int group_size = (MAX_CLIENTS - i < 4) ? (MAX_CLIENTS - i) : (rand() % 4 + 1);
         groups[group_count].is_mixed_gender = (rand()%2 == 0) ? true : false;
@@ -162,25 +161,26 @@ int main() {
         i+=group_size;
     }
 
-    // Utwórz kelnerów
     for (int i = 0; i < NUM_WAITERS; i++) {
         waiter_ids[i] = i;
         pthread_create(&waiters[i], NULL, waiter_function, &waiter_ids[i]);
     }
 
-    // Połącz klientów
     for (int i = 0; i < group_count; i++) {
         for (int j = 0; j < groups[i].num_clients; j++) {
             pthread_join(groups[i].client_threads[j], NULL);
         }
     }
 
-    // Połącz kelnerów
     for (int i = 0; i < NUM_WAITERS; i++) {
         pthread_join(waiters[i], NULL);
     }
 
-    printf("scenariusz zakończony\n");
+    printf("Scenariusz zakończony\n");
+}
+
+int main() {
+    projekt_zso();
 
     return 0;
 }
