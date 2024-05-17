@@ -508,3 +508,116 @@
 ==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
 ==26796==    by 0x4967A3F: clone (clone.S:100)
 ==26796== 
+==26796== ---Thread-Announcement------------------------------------------
+==26796== 
+==26796== Thread #417 was created
+==26796==    at 0x4967A2F: clone (clone.S:76)
+==26796==    by 0x4968878: __clone_internal (clone-internal.c:83)
+==26796==    by 0x48E7D6F: create_thread (pthread_create.c:295)
+==26796==    by 0x48E882C: pthread_create@@GLIBC_2.34 (pthread_create.c:831)
+==26796==    by 0x484B5D7: pthread_create_WRK (hg_intercepts.c:445)
+==26796==    by 0x109BFE: projekt_zso (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x109CDB: main (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796== 
+==26796== ----------------------------------------------------------------
+==26796== 
+==26796== Thread #417: pthread_cond_{signal,broadcast}: dubious: associated lock is not held by any thread
+==26796==    at 0x4849066: pthread_cond_broadcast_WRK (hg_intercepts.c:1632)
+==26796==    by 0x1095A2: waiter_function (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x484B7D6: mythread_wrapper (hg_intercepts.c:406)
+==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
+==26796==    by 0x4967A3F: clone (clone.S:100)
+==26796== 
+==26796== ---Thread-Announcement------------------------------------------
+==26796== 
+==26796== Thread #416 was created
+==26796==    at 0x4967A2F: clone (clone.S:76)
+==26796==    by 0x4968878: __clone_internal (clone-internal.c:83)
+==26796==    by 0x48E7D6F: create_thread (pthread_create.c:295)
+==26796==    by 0x48E882C: pthread_create@@GLIBC_2.34 (pthread_create.c:831)
+==26796==    by 0x484B5D7: pthread_create_WRK (hg_intercepts.c:445)
+==26796==    by 0x109BFE: projekt_zso (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x109CDB: main (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796== 
+==26796== ----------------------------------------------------------------
+==26796== 
+==26796== Thread #416: pthread_cond_{signal,broadcast}: dubious: associated lock is not held by any thread
+==26796==    at 0x4849066: pthread_cond_broadcast_WRK (hg_intercepts.c:1632)
+==26796==    by 0x1095A2: waiter_function (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x484B7D6: mythread_wrapper (hg_intercepts.c:406)
+==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
+==26796==    by 0x4967A3F: clone (clone.S:100)
+==26796== 
+==26796== ---Thread-Announcement------------------------------------------
+==26796== 
+==26796== Thread #414 was created
+==26796==    at 0x4967A2F: clone (clone.S:76)
+==26796==    by 0x4968878: __clone_internal (clone-internal.c:83)
+==26796==    by 0x48E7D6F: create_thread (pthread_create.c:295)
+==26796==    by 0x48E882C: pthread_create@@GLIBC_2.34 (pthread_create.c:831)
+==26796==    by 0x484B5D7: pthread_create_WRK (hg_intercepts.c:445)
+==26796==    by 0x109BFE: projekt_zso (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x109CDB: main (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796== 
+==26796== ----------------------------------------------------------------
+==26796== 
+==26796== Thread #414: pthread_cond_{signal,broadcast}: dubious: associated lock is not held by any thread
+==26796==    at 0x4849066: pthread_cond_broadcast_WRK (hg_intercepts.c:1632)
+==26796==    by 0x1095A2: waiter_function (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x484B7D6: mythread_wrapper (hg_intercepts.c:406)
+==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
+==26796==    by 0x4967A3F: clone (clone.S:100)
+==26796== 
+==26796== ---Thread-Announcement------------------------------------------
+==26796== 
+==26796== Thread #415 was created
+==26796==    at 0x4967A2F: clone (clone.S:76)
+==26796==    by 0x4968878: __clone_internal (clone-internal.c:83)
+==26796==    by 0x48E7D6F: create_thread (pthread_create.c:295)
+==26796==    by 0x48E882C: pthread_create@@GLIBC_2.34 (pthread_create.c:831)
+==26796==    by 0x484B5D7: pthread_create_WRK (hg_intercepts.c:445)
+==26796==    by 0x109BFE: projekt_zso (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x109CDB: main (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796== 
+==26796== ----------------------------------------------------------------
+==26796== 
+==26796== Thread #415: pthread_cond_{signal,broadcast}: dubious: associated lock is not held by any thread
+==26796==    at 0x4849066: pthread_cond_broadcast_WRK (hg_intercepts.c:1632)
+==26796==    by 0x1095A2: waiter_function (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x484B7D6: mythread_wrapper (hg_intercepts.c:406)
+==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
+==26796==    by 0x4967A3F: clone (clone.S:100)
+==26796== 
+==26796== 
+==26796== Process terminating with default action of signal 2 (SIGINT)
+==26796==    at 0x48E4E96: __futex_abstimed_wait_common64 (futex-internal.c:57)
+==26796==    by 0x48E4E96: __futex_abstimed_wait_common (futex-internal.c:87)
+==26796==    by 0x48E9C22: __pthread_clockjoin_ex (pthread_join_common.c:102)
+==26796==    by 0x4848395: pthread_join_WRK (hg_intercepts.c:578)
+==26796==    by 0x109C56: projekt_zso (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x109CDB: main (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796== ----------------------------------------------------------------
+==26796== 
+==26796== Thread #414: Exiting thread still holds 1 lock
+==26796==    at 0x48E6AB1: futex_wake (futex-internal.h:209)
+==26796==    by 0x48E6AB1: pthread_cond_broadcast@@GLIBC_2.3.2 (pthread_cond_broadcast.c:85)
+==26796==    by 0x48490C8: pthread_cond_broadcast_WRK (hg_intercepts.c:1635)
+==26796==    by 0x109453: waiter_function (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x484B7D6: mythread_wrapper (hg_intercepts.c:406)
+==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
+==26796==    by 0x4967A3F: clone (clone.S:100)
+==26796== 
+==26796== ----------------------------------------------------------------
+==26796== 
+==26796== Thread #415: Exiting thread still holds 1 lock
+==26796==    at 0x48ECC90: pthread_mutex_unlock@@GLIBC_2.2.5 (pthread_mutex_unlock.c:368)
+==26796==    by 0x109493: waiter_function (in /mnt/f/GitHub/ZSO/Proj_1/Proj_1)
+==26796==    by 0x484B7D6: mythread_wrapper (hg_intercepts.c:406)
+==26796==    by 0x48E8133: start_thread (pthread_create.c:442)
+==26796==    by 0x4967A3F: clone (clone.S:100)
+==26796== 
+==26796== 
+==26796== Use --history-level=approx or =none to gain increased speed, at
+==26796== the cost of reduced accuracy of conflicting-access information
+==26796== For lists of detected and suppressed errors, rerun with: -s
+==26796== ERROR SUMMARY: 3267970 errors from 27 contexts (suppressed: 80929781 from 29)
