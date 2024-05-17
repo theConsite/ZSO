@@ -129,7 +129,7 @@ void* client_function(void* arg) {
     return NULL;
 }
 
-int main() {
+void projekt_zso(){
     pthread_t waiters[NUM_WAITERS];
     int waiter_ids[NUM_WAITERS];
     int client_ids[MAX_CLIENTS];
@@ -181,6 +181,10 @@ int main() {
     }
 
     printf("scenariusz zakończony\n");
+}
+
+int main() {
+    projekt_zso();
 
     return 0;
 }
