@@ -1,57 +1,67 @@
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# gcc new.c -o Proj_1 -lpthread -Ddebug
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# gcc new_new.c -o Proj_1 -lpthread 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
+root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# gcc new_new.c -o Proj_1 -lpthread -Ddebug
 root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
 Kelner 0 usadził grupe 0(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 1(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 2
-Kelner 2 usadził grupe 2(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 2
-Kelner 0 usadził grupe 3(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 5(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 4(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 6(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 7(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 8(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 9(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 11(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 12(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 10(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 1(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 2(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 3(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 4(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 5(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 6(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 7(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 8(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 9(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 10(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 15(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 12(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 11(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
 Kelner 2 usadził grupe 13(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 15(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 16(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 14(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 17(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 18(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 20(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 27(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 22(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 25(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 29(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 31(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-^[[AStolik 2 zwolniony
-Kelner 2 usadził grupe 21(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 2
-Kelner 2 usadził grupe 23(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Stolik 0 zwolniony
-Kelner 2 usadził grupe 32(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 16(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 17(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 14(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 18(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 19(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 20(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 21(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
 Stolik 3 zwolniony
-Stolik 4 zwolniony
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 26(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Stolik 8 zwolniony
-Kelner 2 usadził grupe 30(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 19(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 22(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 1
+Kelner 3 usadził grupe 23(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 25(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
 Stolik 1 zwolniony
-Kelner 0 kończy zmiane
-Kelner 3 usadził grupe 34(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
 Stolik 5 zwolniony
-Stolik 7 zwolniony
-Kelner 3 usadził grupe 24(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
 Stolik 9 zwolniony
 Kelner 1 kończy zmiane
-Kelner 3 usadził grupe 35(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
+Stolik 7 zwolniony
+Kelner 3 usadził grupe 24(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
 Stolik 2 zwolniony
 Stolik 6 zwolniony
 Kelner 2 kończy zmiane
+Kelner 3 usadził grupe 27(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 29(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 kończy zmiane
 Stolik 3 zwolniony
-Kelner 3 usadził grupe 28(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 33(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 26(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 30(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Stolik 7 zwolniony
+Kelner 3 usadził grupe 28(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 31(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 32(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 35(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Stolik 3 zwolniony
+Kelner 3 usadził grupe 33(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 34(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
 Stolik 7 zwolniony
 Kelner 3 usadził grupe 36(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
 Kelner 3 usadził grupe 37(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
@@ -63,458 +73,457 @@ Stolik 3 zwolniony
 Kelner 3 kończy zmiane
 Scenariusz 1 zakończony
 Kelner 0 usadził grupe 0(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 1(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 1
-Kelner 1 usadził grupe 2(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 3(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 1
-Kelner 0 usadził grupe 4(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 5(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 6(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 1
-Kelner 3 usadził grupe 7(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 8(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 9(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 11(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 1(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 1
+Kelner 2 usadził grupe 2(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 3(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 4(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 5(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 6(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 7(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 8(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 9(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 10(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 11(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
 Kelner 2 usadził grupe 12(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 10(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 13(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 14(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 17(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 16(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 15(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 19(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 20(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 18(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 26(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 21(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 22(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 27(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 30(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Stolik 3 zwolniony
-Kelner 3 usadził grupe 23(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 28(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 13(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
+Kelner 2 usadził grupe 15(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 16(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 17(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 26(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 14(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 18(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 19(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 21(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 20(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 30(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 22(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 23(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 27(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
 Stolik 0 zwolniony
 Kelner 0 usadził grupe 24(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Stolik 2 zwolniony
-Kelner 2 usadził grupe 25(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 29(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Stolik 7 zwolniony
-Kelner 3 usadził grupe 31(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 36(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 32(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 38(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 34(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 33(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Stolik 5 zwolniony
-Stolik 4 zwolniony
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 35(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Stolik 8 zwolniony
-Kelner 0 usadził grupe 37(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 39(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 28(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
 Stolik 3 zwolniony
-Stolik 2 zwolniony
 Stolik 7 zwolniony
 Kelner 3 kończy zmiane
 Stolik 1 zwolniony
-Stolik 0 zwolniony
-Stolik 6 zwolniony
-Kelner 2 kończy zmiane
 Stolik 5 zwolniony
-Stolik 4 zwolniony
-Kelner 0 kończy zmiane
 Stolik 9 zwolniony
 Kelner 1 kończy zmiane
-Scenariusz 2 zakończony
-Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 1(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 2(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 1
-Kelner 0 usadził grupe 3(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 4(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 5(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 6(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
-Kelner 2 usadził grupe 7(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 9(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 10(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 8(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 11(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 12(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 15(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 14(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 13(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 18(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 16(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 21(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 20(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 25(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 23(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 26(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 27(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 29(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 28(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 17(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 32(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 33(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Stolik 3 zwolniony
-Kelner 3 usadził grupe 19(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Stolik 6 zwolniony
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 22(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 24(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 34(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Stolik 0 zwolniony
-Kelner 0 usadził grupe 30(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
-Stolik 7 zwolniony
-Kelner 3 usadził grupe 31(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 35(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 36(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 38(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 37(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Stolik 5 zwolniony
-Kelner 3 usadził grupe 40(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Stolik 4 zwolniony
 Stolik 2 zwolniony
-Kelner 1 usadził grupe 39(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Stolik 8 zwolniony
-Stolik 1 zwolniony
-Stolik 3 zwolniony
-Stolik 7 zwolniony
-Kelner 3 kończy zmiane
-Stolik 9 zwolniony
-Stolik 0 zwolniony
-Kelner 0 kończy zmiane
 Stolik 6 zwolniony
 Kelner 2 kończy zmiane
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 25(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 29(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 32(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 34(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 31(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 36(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 33(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 35(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 38(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 37(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 39(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
+Stolik 0 zwolniony
+Stolik 4 zwolniony
+Kelner 0 kończy zmiane
+Scenariusz 2 zakończony
+Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
+Kelner 2 usadził grupe 1(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 2(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 3(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 4(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 2
+Kelner 2 usadził grupe 5(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 6(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 11(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 7(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 8(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 9(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 12(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 16(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 10(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 13(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 14(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 15(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 20(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 21(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 23(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 25(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 26(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Stolik 3 zwolniony
+Kelner 3 usadził grupe 17(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 27(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 18(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 24(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 19(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 22(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Stolik 9 zwolniony
+Kelner 0 usadził grupe 28(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 29(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 32(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 7 zwolniony
+Kelner 1 usadził grupe 30(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
+Stolik 6 zwolniony
+Stolik 8 zwolniony
+Kelner 1 usadził grupe 31(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 33(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 1
+Kelner 0 usadził grupe 34(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 35(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 36(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 2
+Kelner 2 usadził grupe 37(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 38(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
+Kelner 2 usadził grupe 40(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Stolik 1 zwolniony
 Stolik 5 zwolniony
+Kelner 1 usadził grupe 39(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Stolik 3 zwolniony
+Stolik 2 zwolniony
+Stolik 0 zwolniony
+Stolik 4 zwolniony
+Stolik 9 zwolniony
+Stolik 8 zwolniony
+Kelner 0 kończy zmiane
+Stolik 7 zwolniony
+Kelner 3 kończy zmiane
+Stolik 6 zwolniony
+Kelner 2 kończy zmiane
+Stolik 1 zwolniony
 Kelner 1 kończy zmiane
 Scenariusz 3 zakończony
 Kelner 0 usadził grupe 0(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 1(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 1
-Kelner 2 usadził grupe 2(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 4(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 3(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 2
-Kelner 3 usadził grupe 5(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 1(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 2(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 3(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 4(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 5(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
 Kelner 1 usadził grupe 6(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 2
-Kelner 2 usadził grupe 8(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 9(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 1
-Kelner 3 usadził grupe 10(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 7(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 11(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 12(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 15(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 16(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 17(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 13(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 18(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 14(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 24(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 21(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 25(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 22(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 27(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 26(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 7(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 8(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 2
+Kelner 1 usadził grupe 9(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 10(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 11(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 12(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 14(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 13(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 15(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 16(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 17(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 18(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 19(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 21(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 24(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 25(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 26(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 20(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
 Stolik 1 zwolniony
-Kelner 1 usadził grupe 20(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 30(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 31(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Stolik 2 zwolniony
-Kelner 2 usadził grupe 19(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 34(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Stolik 3 zwolniony
+Stolik 5 zwolniony
+Stolik 9 zwolniony
+Kelner 1 kończy zmiane
+Kelner 0 usadził grupe 27(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 30(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
 Stolik 4 zwolniony
-Kelner 2 usadził grupe 37(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 22(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 23(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 29(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 31(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Stolik 3 zwolniony
 Stolik 7 zwolniony
 Kelner 3 kończy zmiane
-Stolik 8 zwolniony
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 28(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 23(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Stolik 5 zwolniony
-Kelner 2 usadził grupe 36(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 29(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 41(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 32(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 35(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 33(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 38(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 39(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Stolik 0 zwolniony
-Kelner 0 usadził grupe 40(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Stolik 1 zwolniony
+Kelner 0 usadził grupe 34(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
 Stolik 2 zwolniony
 Stolik 6 zwolniony
 Kelner 2 kończy zmiane
-Stolik 8 zwolniony
-Stolik 9 zwolniony
-Stolik 4 zwolniony
-Stolik 5 zwolniony
-Kelner 1 kończy zmiane
 Stolik 0 zwolniony
+Kelner 0 usadził grupe 28(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 36(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 37(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 32(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 35(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 33(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 38(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 39(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 41(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 40(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Stolik 8 zwolniony
+Stolik 0 zwolniony
+Stolik 4 zwolniony
 Kelner 0 kończy zmiane
 Scenariusz 4 zakończony
 Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 1(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 2
-Kelner 2 usadził grupe 2(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 3(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
-Kelner 3 usadził grupe 5(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 1
-Kelner 0 usadził grupe 6(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 4(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 7(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 1(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 2(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 3(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 4(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 5(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 6(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 2
+Kelner 2 usadził grupe 7(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
 Kelner 2 usadził grupe 8(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 2 usadził grupe 9(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 10(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 12(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 9(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 1
 Kelner 3 usadził grupe 11(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 13(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 1
-Kelner 2 usadził grupe 14(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 17(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 16(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 20(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 10(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 12(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 13(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 14(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
 Kelner 1 usadził grupe 15(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 18(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 21(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 23(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 24(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 16(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 17(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 18(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 19(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 20(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 21(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
+Kelner 2 usadził grupe 23(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
 Stolik 0 zwolniony
-Kelner 0 usadził grupe 19(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 27(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 22(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 26(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
 Stolik 4 zwolniony
 Stolik 8 zwolniony
-Kelner 0 usadził grupe 22(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 25(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Stolik 2 zwolniony
-Kelner 2 usadził grupe 26(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 24(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 25(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 27(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 28(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 32(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
 Stolik 3 zwolniony
-Kelner 3 usadził grupe 28(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 1
-Kelner 3 usadził grupe 29(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 32(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 30(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 31(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 33(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 2
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 34(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Stolik 5 zwolniony
-Stolik 7 zwolniony
-Kelner 3 usadził grupe 36(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 35(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 37(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 41(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 38(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 39(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 42(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 43(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 44(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 45(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 40(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Stolik 0 zwolniony
-Stolik 2 zwolniony
-Stolik 3 zwolniony
-Stolik 4 zwolniony
-Stolik 8 zwolniony
-Kelner 0 kończy zmiane
-Stolik 1 zwolniony
-Stolik 6 zwolniony
-Kelner 2 kończy zmiane
 Stolik 7 zwolniony
 Kelner 3 kończy zmiane
+Stolik 1 zwolniony
 Stolik 5 zwolniony
 Stolik 9 zwolniony
 Kelner 1 kończy zmiane
+Stolik 2 zwolniony
+Stolik 6 zwolniony
+Kelner 2 kończy zmiane
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 29(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 30(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 31(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 33(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 34(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 35(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 36(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 37(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 38(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 39(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 40(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 42(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 41(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 43(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 45(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 44(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Stolik 0 zwolniony
+Stolik 8 zwolniony
+Stolik 4 zwolniony
+Kelner 0 kończy zmiane
 Scenariusz 5 zakończony
 Kelner 0 usadził grupe 0(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 1
-Kelner 1 usadził grupe 1(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 3(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 2
-Kelner 0 usadził grupe 2(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 4(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 5(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 6(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 7(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 8(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 9(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 11(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 1
-Kelner 3 usadził grupe 10(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 12(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
-Kelner 0 usadził grupe 15(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 14(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 13(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 2
-Kelner 3 usadził grupe 16(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 1
-Kelner 2 usadził grupe 18(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 17(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 19(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 20(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 24(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 22(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 25(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 28(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 31(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Stolik 2 zwolniony
-Kelner 2 usadził grupe 21(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 30(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 23(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 1(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 2(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 3(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 4(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 5(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
+Kelner 2 usadził grupe 6(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 7(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
+Kelner 2 usadził grupe 9(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 11(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 8(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 10(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 12(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 13(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 14(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 1
+Kelner 3 usadził grupe 15(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 16(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 18(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 17(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 28(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 19(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 20(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 21(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 22(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 24(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
 Stolik 0 zwolniony
-Stolik 3 zwolniony
-Kelner 3 usadził grupe 29(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 32(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 34(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 26(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 27(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 36(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Stolik 5 zwolniony
-Kelner 3 usadził grupe 37(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Stolik 4 zwolniony
-Kelner 2 usadził grupe 39(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Stolik 8 zwolniony
-Kelner 0 usadził grupe 33(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 35(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 41(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 38(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Stolik 7 zwolniony
-Kelner 1 usadził grupe 40(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 43(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 2
-Kelner 0 usadził grupe 42(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 23(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
 Stolik 2 zwolniony
-Stolik 1 zwolniony
-Stolik 0 zwolniony
-Stolik 3 zwolniony
-Stolik 8 zwolniony
-Stolik 5 zwolniony
-Stolik 7 zwolniony
 Stolik 6 zwolniony
 Kelner 2 kończy zmiane
-Kelner 3 kończy zmiane
+Kelner 0 usadził grupe 30(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 3 zwolniony
+Kelner 3 usadził grupe 25(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 27(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 26(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 29(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 31(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 32(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 34(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 1 zwolniony
+Stolik 5 zwolniony
 Stolik 9 zwolniony
 Kelner 1 kończy zmiane
+Stolik 7 zwolniony
+Kelner 3 usadził grupe 33(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 36(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 35(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 37(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Stolik 3 zwolniony
+Kelner 0 usadził grupe 39(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 38(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 41(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 40(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 42(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 43(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
+Stolik 7 zwolniony
+Stolik 0 zwolniony
+Stolik 3 zwolniony
+Kelner 3 kończy zmiane
+Stolik 8 zwolniony
 Stolik 4 zwolniony
 Kelner 0 kończy zmiane
 Scenariusz 6 zakończony
 Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 1(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 1
+Kelner 0 usadził grupe 1(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 1
 Kelner 2 usadził grupe 2(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 3(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 4(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 7(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 5(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 1
-Kelner 1 usadził grupe 9(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 10(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 8(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 11(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 13(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 12(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 14(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 15(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 16(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 6(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 21(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 17(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 18(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 20(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 23(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 24(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 28(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 26(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 32(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 35(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 3(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 4(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 5(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 6(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 7(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 8(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 10(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 11(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 9(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 12(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 13(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 14(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 15(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 21(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 16(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 17(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 18(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 20(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 23(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 24(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 26(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 28(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
 Stolik 0 zwolniony
 Kelner 0 usadził grupe 19(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 34(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 37(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 2
-Stolik 5 zwolniony
-Kelner 1 usadził grupe 22(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 25(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 38(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 39(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
 Stolik 2 zwolniony
-Kelner 2 usadził grupe 27(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 22(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 25(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 32(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
 Stolik 3 zwolniony
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 30(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 36(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
 Stolik 7 zwolniony
 Kelner 3 kończy zmiane
-Kelner 1 usadził grupe 31(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
 Stolik 4 zwolniony
 Stolik 8 zwolniony
-Kelner 0 usadził grupe 29(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 33(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 40(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 41(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 42(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Stolik 0 zwolniony
-Stolik 5 zwolniony
 Stolik 6 zwolniony
-Stolik 2 zwolniony
-Kelner 2 kończy zmiane
+Kelner 0 usadził grupe 27(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
 Stolik 1 zwolniony
+Stolik 5 zwolniony
+Kelner 0 usadził grupe 29(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
 Stolik 9 zwolniony
+Kelner 0 usadził grupe 34(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
 Kelner 1 kończy zmiane
+Kelner 2 usadził grupe 30(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 35(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 31(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 33(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 36(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 37(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 38(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 39(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 40(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 41(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 42(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 2
 Stolik 8 zwolniony
+Stolik 2 zwolniony
+Stolik 0 zwolniony
 Stolik 4 zwolniony
 Kelner 0 kończy zmiane
-Scenariusz 7 zakończony
-Kelner 0 usadził grupe 0(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 1(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 2
-Kelner 0 usadził grupe 2(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 4(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 1
-Kelner 3 usadził grupe 5(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
-Kelner 2 usadził grupe 3(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 6(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 7(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 8(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 9(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 10(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 11(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 13(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 14(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 20(2 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 21(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
-Kelner 2 usadził grupe 23(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 27(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 17(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 24(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 28(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 29(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 33(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 32(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 12(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Stolik 5 zwolniony
-Kelner 1 usadził grupe 15(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Stolik 2 zwolniony
-Stolik 3 zwolniony
-Kelner 3 usadził grupe 16(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
 Stolik 6 zwolniony
 Kelner 2 kończy zmiane
-Stolik 7 zwolniony
-Kelner 3 usadził grupe 18(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Stolik 4 zwolniony
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 19(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Stolik 8 zwolniony
-Kelner 0 usadził grupe 26(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 30(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 35(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Scenariusz 7 zakończony
+Kelner 0 usadził grupe 0(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 1(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 2(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 3(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 4(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 5(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 6(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 7(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 11(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 17(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 8(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 13(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 9(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 10(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 12(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 20(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 21(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 23(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 24(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 14(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 22(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 27(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 28(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 29(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
 Stolik 0 zwolniony
-Kelner 0 usadził grupe 22(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 25(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 31(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Stolik 5 zwolniony
-Kelner 1 usadził grupe 34(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 15(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
 Stolik 3 zwolniony
 Stolik 7 zwolniony
 Kelner 3 kończy zmiane
-Stolik 9 zwolniony
-Stolik 4 zwolniony
+Kelner 0 usadził grupe 32(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
 Stolik 8 zwolniony
+Kelner 0 usadził grupe 16(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Stolik 1 zwolniony
+Stolik 5 zwolniony
+Kelner 1 usadził grupe 18(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 19(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Stolik 2 zwolniony
+Stolik 6 zwolniony
+Kelner 2 kończy zmiane
+Kelner 0 usadził grupe 33(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Stolik 4 zwolniony
+Kelner 0 usadził grupe 25(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 30(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Stolik 9 zwolniony
+Kelner 1 usadził grupe 26(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 31(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Stolik 1 zwolniony
+Kelner 1 usadził grupe 34(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Stolik 5 zwolniony
+Kelner 1 usadził grupe 35(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
+Stolik 8 zwolniony
+Stolik 4 zwolniony
+Stolik 9 zwolniony
 Stolik 0 zwolniony
 Kelner 0 kończy zmiane
 Stolik 1 zwolniony
@@ -522,134 +531,127 @@ Stolik 5 zwolniony
 Kelner 1 kończy zmiane
 Scenariusz 8 zakończony
 Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 1(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 2(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 4(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 3(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 1
+Kelner 0 usadził grupe 1(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 2(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 3(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 1
+Kelner 1 usadził grupe 4(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
 Kelner 1 usadził grupe 5(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 8(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 6(1 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 7(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 9(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 10(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 11(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 13(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 14(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 12(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 15(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 16(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 22(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
-Kelner 2 usadził grupe 17(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 19(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 36(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 21(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 6(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 7(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 10(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 8(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 11(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 9(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 12(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 22(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 13(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 14(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 15(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 2
+Kelner 3 usadził grupe 16(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 3 usadził grupe 17(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 19(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
 Stolik 0 zwolniony
 Kelner 0 usadził grupe 18(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
 Kelner 0 usadził grupe 26(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 20(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
 Stolik 4 zwolniony
 Stolik 8 zwolniony
-Kelner 0 usadził grupe 23(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 24(3 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 27(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
-Stolik 3 zwolniony
-Kelner 0 usadził grupe 25(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 28(2 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
-Stolik 2 zwolniony
-Stolik 7 zwolniony
-Stolik 5 zwolniony
-Kelner 3 kończy zmiane
-Kelner 2 usadził grupe 29(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 2
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 31(2 klientów) przy stoliku 5. Łącznie osób przy stoliku: 2
-Kelner 2 usadził grupe 30(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 32(4 klientów) przy stoliku 9. Łącznie osób przy stoliku: 4
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 33(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 2 usadził grupe 34(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Stolik 0 zwolniony
-Kelner 0 usadził grupe 35(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 20(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 21(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
+Kelner 0 usadził grupe 23(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 27(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
 Stolik 1 zwolniony
-Stolik 4 zwolniony
 Stolik 5 zwolniony
-Stolik 2 zwolniony
-Stolik 8 zwolniony
 Stolik 9 zwolniony
 Kelner 1 kończy zmiane
-Stolik 6 zwolniony
-Kelner 2 kończy zmiane
-Stolik 0 zwolniony
-Kelner 0 kończy zmiane
-Scenariusz 9 zakończony
-Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
-Kelner 1 usadził grupe 1(2 klientów) przy stoliku 1. Łącznie osób przy stoliku: 2
-Kelner 0 usadził grupe 2(4 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Kelner 1 usadził grupe 4(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 3(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 6(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 7(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 8(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 9(2 klientów) przy stoliku 9. Łącznie osób przy stoliku: 5
-Kelner 2 usadził grupe 10(2 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
-Kelner 1 usadził grupe 11(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 5(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 15(1 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 13(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
-Kelner 3 usadził grupe 14(3 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
-Kelner 2 usadził grupe 16(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
-Kelner 0 usadził grupe 12(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
-Kelner 2 usadził grupe 17(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 19(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 18(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Kelner 0 usadził grupe 20(1 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 28(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
-Kelner 2 usadził grupe 26(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
-Kelner 0 usadził grupe 34(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
-Kelner 3 usadził grupe 35(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 5
-Kelner 3 usadził grupe 38(1 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
-Stolik 1 zwolniony
-Kelner 1 usadził grupe 22(4 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
-Stolik 0 zwolniony
-Kelner 0 usadził grupe 21(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 3
-Kelner 0 usadził grupe 23(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
-Stolik 5 zwolniony
 Stolik 2 zwolniony
 Kelner 2 usadził grupe 24(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
-Stolik 3 zwolniony
 Kelner 2 usadził grupe 25(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
-Stolik 4 zwolniony
-Kelner 0 usadził grupe 29(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
-Kelner 3 usadził grupe 27(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
-Stolik 9 zwolniony
-Kelner 1 usadził grupe 30(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 3
-Kelner 1 usadził grupe 31(3 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
-Stolik 6 zwolniony
-Kelner 2 usadził grupe 33(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
-Kelner 1 usadził grupe 32(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
-Stolik 8 zwolniony
-Kelner 0 usadził grupe 36(3 klientów) przy stoliku 8. Łącznie osób przy stoliku: 3
-Stolik 7 zwolniony
-Kelner 3 usadził grupe 37(4 klientów) przy stoliku 7. Łącznie osób przy stoliku: 4
-Stolik 1 zwolniony
-Stolik 0 zwolniony
-Stolik 2 zwolniony
-Stolik 4 zwolniony
-Stolik 5 zwolniony
 Stolik 3 zwolniony
-Stolik 8 zwolniony
-Kelner 0 kończy zmiane
-Stolik 6 zwolniony
-Kelner 2 kończy zmiane
 Stolik 7 zwolniony
 Kelner 3 kończy zmiane
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 28(2 klientów) przy stoliku 6. Łącznie osób przy stoliku: 2
+Stolik 0 zwolniony
+Kelner 0 usadził grupe 29(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 30(3 klientów) przy stoliku 0. Łącznie osób przy stoliku: 5
+Kelner 0 usadził grupe 36(1 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 usadził grupe 31(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 32(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 33(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 34(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 35(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Stolik 0 zwolniony
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 kończy zmiane
+Stolik 2 zwolniony
+Stolik 6 zwolniony
+Kelner 2 kończy zmiane
+Scenariusz 9 zakończony
+Kelner 0 usadził grupe 0(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 2
+Kelner 0 usadził grupe 1(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 2(4 klientów) przy stoliku 3. Łącznie osób przy stoliku: 4
+Kelner 3 usadził grupe 3(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 4(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 5(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 7(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 5
+Kelner 2 usadził grupe 8(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 6(4 klientów) przy stoliku 4. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 9(2 klientów) przy stoliku 0. Łącznie osób przy stoliku: 6
+Kelner 2 usadził grupe 11(1 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 10(2 klientów) przy stoliku 4. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 12(4 klientów) przy stoliku 8. Łącznie osób przy stoliku: 4
+Kelner 0 usadził grupe 15(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 5
+Kelner 3 usadził grupe 13(3 klientów) przy stoliku 7. Łącznie osób przy stoliku: 6
+Kelner 0 usadził grupe 17(1 klientów) przy stoliku 8. Łącznie osób przy stoliku: 6
+Kelner 3 usadził grupe 16(2 klientów) przy stoliku 3. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 14(3 klientów) przy stoliku 1. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 18(4 klientów) przy stoliku 5. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 19(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 4
+Kelner 1 usadził grupe 20(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 21(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 3
+Kelner 1 usadził grupe 23(3 klientów) przy stoliku 9. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 26(1 klientów) przy stoliku 1. Łącznie osób przy stoliku: 6
+Kelner 1 usadził grupe 28(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 5
+Kelner 1 usadził grupe 34(1 klientów) przy stoliku 5. Łącznie osób przy stoliku: 6
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 22(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Kelner 2 usadził grupe 35(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 5
+Stolik 0 zwolniony
+Stolik 4 zwolniony
+Stolik 8 zwolniony
+Kelner 0 kończy zmiane
+Stolik 3 zwolniony
+Stolik 7 zwolniony
+Kelner 3 kończy zmiane
+Stolik 1 zwolniony
+Stolik 5 zwolniony
+Kelner 2 usadził grupe 38(1 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
 Stolik 9 zwolniony
 Kelner 1 kończy zmiane
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 24(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 25(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 27(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 29(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 30(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 31(3 klientów) przy stoliku 6. Łącznie osób przy stoliku: 6
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 32(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 3
+Kelner 2 usadził grupe 36(3 klientów) przy stoliku 2. Łącznie osób przy stoliku: 6
+Stolik 6 zwolniony
+Kelner 2 usadził grupe 33(4 klientów) przy stoliku 6. Łącznie osób przy stoliku: 4
+Stolik 2 zwolniony
+Kelner 2 usadził grupe 37(4 klientów) przy stoliku 2. Łącznie osób przy stoliku: 4
+Stolik 6 zwolniony
+Stolik 2 zwolniony
+Kelner 2 kończy zmiane
 Scenariusz 10 zakończony
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# gcc new.c -o Proj_1 -lpthread        
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
-root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# ./Proj_1 
 root@DESKTOP-MNMA0O8:/mnt/f/GitHub/ZSO/Proj_1# 
