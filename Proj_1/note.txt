@@ -1,5 +1,3 @@
-Wywalić grupy. Po przypisaniu stolika grupa idzie w niepamięć i obchodzi mnie tylko stolik
-
 - program ma być bezpieczny wielowątkowo (C/C++) i ma symulować rozwiązanie problemu przedstawionego  scenariusza
 
 - projekty piszemy w C/C++ (biblioteka thread) - preferowane C, a jeżeli w C++ to proszę unikać obiektowości, dziedziczenia, wszelki aspektów utrudniających weryfikację - skupiamy się na wątkach.
