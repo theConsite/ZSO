@@ -7,7 +7,7 @@
 #define NUM_TABLES 10
 #define NUM_WAITERS 4
 #define SEATS_PER_TABLE 6
-#define MAX_CLIENTS 100
+#define MAX_CLIENTS 65
 
 #ifdef debug
 #define PRINTF(...) printf(__VA_ARGS__)
@@ -44,17 +44,21 @@ Group groups[MAX_CLIENTS];
 int group_count = 0;
 pthread_mutex_t group_count_lock = PTHREAD_MUTEX_INITIALIZER;
 
-bool can_add_to_table(Table table, Group group, int waiterId){
-    return table.occupied_seats + group.num_clients <= SEATS_PER_TABLE &&
-                        !(table.occupied_seats == 2 && table.mixed_gender) &&
-                        table.waiter_id == waiterId;
-}
-bool is_assigned_to_table(Table table, int waiterId){
-    return table.waiter_id == waiterId;
+bool can_add_to_table(Table* table, Group* group, int waiterId) {
+    bool can_add = table->occupied_seats + group->num_clients <= SEATS_PER_TABLE &&
+                   !(table->occupied_seats == 2 && table->mixed_gender) &&
+                   table->waiter_id == waiterId;
+    return can_add;
 }
 
-bool are_clients_ready_to_pay(Table table){
-    return table.ready_to_pay == table.occupied_seats && table.occupied_seats != 0;
+bool is_assigned_to_table(Table* table, int waiterId) {
+    bool assigned = table->waiter_id == waiterId;
+    return assigned;
+}
+
+bool are_clients_ready_to_pay(Table* table) {
+    bool ready = table->ready_to_pay == table->occupied_seats && table->occupied_seats != 0;
+    return ready;
 }
 
 bool are_all_tables_serviced(int clientsAtTables){
@@ -75,7 +79,7 @@ void *waiter_function(void *arg) {
             if (groups[i].is_waiting) {
                 for (int j = 0; j < NUM_TABLES; j++) {
                     pthread_mutex_lock(&tables[j].lock);
-                    if (can_add_to_table(tables[j], groups[i], waiter_id)) {
+                    if (can_add_to_table(&tables[j], &groups[i], waiter_id)) {
 
                         no_groups_waiting = false;
                         tables[j].occupied_seats += groups[i].num_clients;
@@ -99,8 +103,8 @@ void *waiter_function(void *arg) {
         int clients_at_tables = 0;
         for (int j = 0; j < NUM_TABLES; j++) {
             pthread_mutex_lock(&tables[j].lock);
-            if (is_assigned_to_table(tables[j], waiter_id)) {
-                if (are_clients_ready_to_pay(tables[j])) {
+            if (is_assigned_to_table(&tables[j], waiter_id)) {
+                if (are_clients_ready_to_pay(&tables[j])) {
                     pthread_cond_broadcast(&tables[j].wait_for_payment);
                     tables[j].mixed_gender = false;
                     tables[j].ready_to_pay = 0;
@@ -204,7 +208,7 @@ void projekt_zso(int runcount) {
 }
 
 int main() {
-    for (int i = 0; i < 1; i++) {
+    for (int i = 0; i < 10; i++) {
         projekt_zso(i + 1);
     }
 

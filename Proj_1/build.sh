@@ -1,0 +1,1 @@
+gcc proj.c -o Proj_1 -g -lpthread
