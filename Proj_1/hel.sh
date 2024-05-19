@@ -1,1 +1,1 @@
-valgrind --tool=helgrind ./Proj_1
+valgrind --tool=helgrind ./run.sh

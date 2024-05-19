@@ -1,1 +1,1 @@
-valgrind --tool=drd ./Proj_1
+valgrind --tool=drd ./run.sh

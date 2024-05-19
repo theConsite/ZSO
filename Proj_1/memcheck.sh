@@ -1,1 +1,1 @@
-valgrind ./Proj_1
+valgrind ./run.sh

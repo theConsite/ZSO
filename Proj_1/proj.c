@@ -7,7 +7,7 @@
 #define NUM_TABLES 10
 #define NUM_WAITERS 4
 #define SEATS_PER_TABLE 6
-#define MAX_CLIENTS 65
+#define MAX_CLIENTS 60
 
 #ifdef debug
 #define PRINTF(...) printf(__VA_ARGS__)
@@ -34,6 +34,7 @@ typedef struct {
     int waiter_id;
     int occupied_seats;
     int ready_to_pay;
+    bool is_exiting;
     pthread_mutex_t lock;
     pthread_cond_t wait_for_payment;
 } Table;
@@ -104,12 +105,15 @@ void *waiter_function(void *arg) {
         for (int j = 0; j < NUM_TABLES; j++) {
             pthread_mutex_lock(&tables[j].lock);
             if (is_assigned_to_table(&tables[j], waiter_id)) {
-                if (are_clients_ready_to_pay(&tables[j])) {
-                    pthread_cond_broadcast(&tables[j].wait_for_payment);
+                if(tables[j].occupied_seats == 0 && tables[j].is_exiting){
                     tables[j].mixed_gender = false;
                     tables[j].ready_to_pay = 0;
-                    tables[j].occupied_seats = 0;
+                    tables[j].is_exiting = false;
                     PRINTF("Stolik %d zwolniony\n", j);
+                }
+                else if (are_clients_ready_to_pay(&tables[j])) {
+                    clients_at_tables += tables[j].occupied_seats;
+                    tables[j].is_exiting = true;
                 } else {
                     clients_at_tables += tables[j].occupied_seats;
                 }
@@ -136,10 +140,20 @@ void *client_function(void *arg) {
 
     SLEEP(1);
 
+
     pthread_mutex_lock(&tables[table_id].lock);
     tables[table_id].ready_to_pay += 1;
-    pthread_cond_wait(&tables[table_id].wait_for_payment, &tables[table_id].lock);
     pthread_mutex_unlock(&tables[table_id].lock);
+    while(true){
+        pthread_mutex_lock(&tables[table_id].lock);
+        if(tables[table_id].is_exiting){
+            tables[table_id].occupied_seats -= 1;
+            pthread_mutex_unlock(&tables[table_id].lock);
+            break;
+        }
+        pthread_mutex_unlock(&tables[table_id].lock);
+    }
+
     return NULL;
 }
 
@@ -203,7 +217,7 @@ void projekt_zso(int runcount) {
     for (int i = 0; i < NUM_WAITERS; i++) {
         pthread_join(waiters[i], NULL);
     }
-
+    
     PRINTF("Scenariusz %d zakończony\n", runcount);
 }
 

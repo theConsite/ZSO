@@ -1,6 +1,7 @@
+#!/bin/sh
 I=1
-while true: do
-    ./run
+while [ $I -le 30 ]; do
+    ./Proj_1
     echo $I
-    let I++
+    I=$((I + 1))
 done
