@@ -7,7 +7,7 @@
 #define NUM_TABLES 10
 #define NUM_WAITERS 4
 #define SEATS_PER_TABLE 6
-#define MAX_CLIENTS 66
+#define MAX_CLIENTS 60
 
 #ifdef debug
 #define PRINTF(...) printf(__VA_ARGS__)
