@@ -36,6 +36,10 @@ void root(){
         msgQueues[i] = msgcrt;
         printf("Utworzono kolejkę %s, %d\n", buffer, msgcrt);
     }
+
+    for(int i = 0; i<3; i++){
+        msgctl(msgQueues[i], IPC_RMID, NULL);
+    }
 }
 
 void node(int id){
@@ -54,6 +58,9 @@ void node(int id){
         }
         msgQueues[i] = msgcrt;
         printf("Utworzono kolejkę %s\n", buffer);
+    }
+    for(int i = 0; i<3; i++){
+        msgctl(msgQueues[i], IPC_RMID, NULL);
     }
 }
 
