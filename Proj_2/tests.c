@@ -24,18 +24,17 @@ unsigned int hash_string(const char *str) {
 }
 
 void root(){
-    printf("root started");
     int msgQueues[3];
     char buffer[20];
     for(int i = 0; i<3; i++){
         createFormattedString(i, buffer, sizeof(buffer));
         int key = hash_string(buffer);
-        // int msgcrt = msgget(key, IPC_CREAT | 0666);
-        // while(msgcrt == -1){
-        //     int msgcrt = msgget(key, IPC_CREAT | 0666);
-        // }
-        // msgQueues[i] = msgcrt;
-        printf("Utworzono kolejkę %s, %s\n", buffer, key);
+        int msgcrt = msgget(key, IPC_CREAT | 0666);
+        while(msgcrt == -1){
+            int msgcrt = msgget(key, IPC_CREAT | 0666);
+        }
+        msgQueues[i] = msgcrt;
+        printf("Utworzono kolejkę %s, %d\n", buffer, msgcrt);
     }
 }
 
@@ -56,16 +55,13 @@ void node(int id){
         msgQueues[i] = msgcrt;
         printf("Utworzono kolejkę %s\n", buffer);
     }
-
-
 }
 
 void leaf(int id){
+    printf("leaf\n");
 }
 
 int main(int argc, char *argv[]) {
-    printf("%s", argc);
-    return 0;
     int levels = 0;
     if (argc != 3) {
         levels = 2;
