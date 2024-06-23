@@ -1,149 +1,153 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
-#include <sys/wait.h>
-#include <fcntl.h>
-#include <string.h>
+#include <errno.h>
 
-#define NUM_DATA 10
-#define NUM_CHILDREN 3
-#define PIPE_NAME "/tmp/stat_pipe"
+#ifdef debug
+#define PRINTF(...) printf(__VA_ARGS__)
+#define SLEEP(x) sleep(x)
+// #define SLEEP(x)
+#else
+#define PRINTF(...)
+#define SLEEP(x)
+#endif
 
-typedef struct {
+struct msgContents
+{
     long mtype;
-    int data;
-} message_t;
+    int number;
+} msg;
 
-void leaf_process(int msgid, int id) {
-    message_t msg;
-    for (int i = 0; i < NUM_DATA; i++) {
-        msg.mtype = 1;
-        msg.data = rand() % 100; // Produkuj losowe dane
-        msgsnd(msgid, &msg, sizeof(int), 0);
-    }
-
-    // Oczekiwanie na sygnał
-    pause();
-
-    // Wysłanie statystyk do named pipe
-    int pipe_fd = open(PIPE_NAME, O_WRONLY);
-    dprintf(pipe_fd, "Leaf %d sent %d messages\n", id, NUM_DATA);
-    close(pipe_fd);
-
-    exit(0);
+int calc_key(int id)
+{
+    return 22664 + id;
 }
 
-void node_process(int msgid, int children_msgids[], int id) {
-    int total_data = 0;
-    message_t msg;
-
-    for (int i = 0; i < NUM_CHILDREN; i++) {
-        for (int j = 0; j < NUM_DATA; j++) {
-            msgrcv(children_msgids[i], &msg, sizeof(int), 0, 0);
-            total_data += msg.data;
-            msgsnd(msgid, &msg, sizeof(int), 0);
-        }
+int init_msgq(int id)
+{
+    int key = calc_key(id);
+    int msgcrt = msgget(key, IPC_CREAT | 0666);
+    while (msgcrt == -1)
+    {
+        int msgcrt = msgget(key, IPC_CREAT | 0666);
     }
-
-    // Oczekiwanie na sygnał
-    pause();
-
-    // Wysłanie statystyk do named pipe
-    int pipe_fd = open(PIPE_NAME, O_WRONLY);
-    dprintf(pipe_fd, "Node %d received %d messages, total data: %d\n", id, NUM_CHILDREN * NUM_DATA, total_data);
-    close(pipe_fd);
-
-    exit(0);
+    PRINTF("Zainicjalizowano kolejkę %d, %d\n", id, msgcrt);
+    return msgcrt;
 }
 
-void root_process(int msgid) {
-    int total_data = 0;
-    message_t msg;
-
-    for (int i = 0; i < NUM_CHILDREN * NUM_DATA; i++) {
-        msgrcv(msgid, &msg, sizeof(int), 0, 0);
-        total_data += msg.data;
-    }
-
-    printf("Root received total data: %d\n", total_data);
-
-    // Wysłanie sygnału do wszystkich procesów
-    for (int i = 0; i < NUM_CHILDREN + 1; i++) {
-        kill(0, SIGUSR1);
-    }
-
-    // Odczytanie statystyk z named pipe
-    int pipe_fd = open(PIPE_NAME, O_RDONLY);
-    char buffer[256];
-    int bytes_read;
-    while ((bytes_read = read(pipe_fd, buffer, sizeof(buffer) - 1)) > 0) {
-        buffer[bytes_read] = '\0';
-        printf("%s", buffer);
-    }
-    close(pipe_fd);
-
-    exit(0);
+void close_msgq(int msgqId)
+{
+    msgctl(msgqId, IPC_RMID, NULL);
+    PRINTF("Usunięto kolejkę %d\n", msgqId);
 }
 
-int main() {
-    int msgid_root, msgid_nodes[NUM_CHILDREN], msgid_leaves[NUM_CHILDREN][NUM_CHILDREN];
-    pid_t pids[NUM_CHILDREN + 1];
-    key_t key = ftok("progfile", 65);
+int calc_node_messages_limit(int nid, int levels)
+{
+    int current_lvl = (nid < 4) ? 1 : 2;
+    return (pow(3, levels - current_lvl) * 10);
+}
 
-    msgid_root = msgget(key, 0666 | IPC_CREAT);
-
-    // Tworzenie kolejek dla węzłów
-    for (int i = 0; i < NUM_CHILDREN; i++) {
-        key = ftok("progfile", 66 + i);
-        msgid_nodes[i] = msgget(key, 0666 | IPC_CREAT);
-
-        for (int j = 0; j < NUM_CHILDREN; j++) {
-            key = ftok("progfile", 70 + i * NUM_CHILDREN + j);
-            msgid_leaves[i][j] = msgget(key, 0666 | IPC_CREAT);
+void root(int levels)
+{
+    int messageQueIds[3];
+    int totalMessages = 0;
+    int messagesToReceive = levels * 30;
+    for (int i = 0; i < 3; i++)
+    {
+        messageQueIds[i] = init_msgq(i + 1);
+    }
+    while (totalMessages < messagesToReceive)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            msgrcv(messageQueIds[i], &msg, sizeof(msg), 1L, 0);
+            totalMessages++;
+            PRINTF("Korzen odebral wiadomosc: %d\n", msg.number);
         }
     }
+    for (int i = 0; i < 3; i++)
+    {
+        close_msgq(messageQueIds[i]);
+    }
+    PRINTF("Korzen konczy prace\n");
+}
 
-    mkfifo(PIPE_NAME, 0666);
+void node(int id, int levels)
+{
+    int childrenIds[3];
+    int childrenMsgQueIds[3];
+    int parentQueId = init_msgq(id);
+    int totalMessages = 0;
+    int messagesToReceive = calc_node_messages_limit(id, levels);
 
-    // Tworzenie procesów liści
-    for (int i = 0; i < NUM_CHILDREN; i++) {
-        for (int j = 0; j < NUM_CHILDREN; j++) {
-            if ((pids[i] = fork()) == 0) {
-                leaf_process(msgid_leaves[i][j], i * NUM_CHILDREN + j);
-            }
+    // Calculate the children IDs
+    for (int i = 0; i < 3; i++)
+    {
+        int child_id = (id) * 3 + i + 1;
+        childrenIds[i] = child_id;
+        childrenMsgQueIds[i] = init_msgq(child_id);
+    }
+    while (totalMessages < messagesToReceive)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            msgrcv(childrenMsgQueIds[i], &msg, sizeof(msg), 1L, 0);
+            totalMessages++;
+            PRINTF("Node %d odbiera wiadomosc: %d\n", id, msg.number);
+            msgsnd(parentQueId, &msg, sizeof(msg), 0);
         }
     }
-
-    // Tworzenie procesów węzłów
-    for (int i = 0; i < NUM_CHILDREN; i++) {
-        if ((pids[i] = fork()) == 0) {
-            node_process(msgid_nodes[i], msgid_leaves[i], i);
-        }
+    for (int i = 0; i < 3; i++)
+    {
+        close_msgq(childrenMsgQueIds[i]);
     }
+    PRINTF("Node %d konczy prace\n", id);
+}
 
-    // Proces korzenia
-    if ((pids[NUM_CHILDREN] = fork()) == 0) {
-        root_process(msgid_root);
+void leaf(int id)
+{
+    int parentQueId = init_msgq(id);
+    msg.mtype = 1;
+    PRINTF("Lisc %d idq: %d\n", id, parentQueId);
+    for (int i = 0; i < 10; i++)
+    {
+        SLEEP(1);
+        msg.number = i;
+        msgsnd(parentQueId, &msg, sizeof(msg), 0);
+        PRINTF("Lisc %d wysyla: %d\n", id, i);
     }
+    PRINTF("Lisc %d spadl\n", id);
+}
 
-    // Czekanie na zakończenie wszystkich procesów
-    for (int i = 0; i < NUM_CHILDREN + 1; i++) {
-        wait(NULL);
+int main(int argc, char *argv[])
+{
+    int levels = 0;
+    if (argc != 3)
+    {
+        levels = 2;
     }
-
-    // Usuwanie kolejek komunikatów
-    msgctl(msgid_root, IPC_RMID, NULL);
-    for (int i = 0; i < NUM_CHILDREN; i++) {
-        msgctl(msgid_nodes[i], IPC_RMID, NULL);
-        for (int j = 0; j < NUM_CHILDREN; j++) {
-            msgctl(msgid_leaves[i][j], IPC_RMID, NULL);
-        }
+    else
+    {
+        levels = atoi(argv[2]);
     }
+    int id = atoi(argv[1]);
+    int leaf_after = levels == 2 ? 3 : 12;
 
-    unlink(PIPE_NAME);
-
+    if (id == 0)
+    {
+        root(levels);
+    }
+    else if (id > leaf_after || levels == 1)
+    {
+        leaf(id);
+    }
+    else
+    {
+        node(id, levels);
+    }
     return 0;
 }

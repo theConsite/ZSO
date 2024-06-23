@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc tests.c -o Proj_2 -lm
+gcc proj.c -o Proj_2 -lm
