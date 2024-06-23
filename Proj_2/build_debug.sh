@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc proj.c -o Proj_2 -lm -Ddebug
+gcc proj.c -o Proj_2 -lm -lpthread -Ddebug

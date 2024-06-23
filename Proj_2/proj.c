@@ -2,19 +2,84 @@
 #include <stdlib.h>
 #include <math.h>
 #include <unistd.h>
-#include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include <errno.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <pthread.h>
+#include <stdbool.h>
+#include <stdarg.h>
 
+
+#define FIFO_NAME "/tmp/s22664_fifo"
+#define BUFFER_SIZE 512
 #ifdef debug
 #define PRINTF(...) printf(__VA_ARGS__)
 #define SLEEP(x) sleep(x)
-// #define SLEEP(x)
 #else
 #define PRINTF(...)
 #define SLEEP(x)
 #endif
+
+bool read_files = true;
+pthread_mutex_t read_lock = PTHREAD_MUTEX_INITIALIZER;
+
+char *format_string(const char *format, ...) {
+    size_t buffer_size = 256;
+    char *buffer = malloc(buffer_size);
+    va_list args;
+    va_start(args, format);
+    vsnprintf(buffer, buffer_size, format, args);
+    va_end(args);
+
+
+
+    return buffer;
+}
+
+void create_fifo() {
+    if (mkfifo(FIFO_NAME, 0666) == -1) {
+        if (errno != EEXIST) {
+            perror("mkfifo");
+            exit(EXIT_FAILURE);
+        }
+    }
+}
+
+void write_to_fifo(const char *message) {
+    int fd = open(FIFO_NAME, O_WRONLY);
+    if (fd == -1) {
+        fd = open(FIFO_NAME, O_WRONLY);
+    }
+    write(fd, message, strlen(message));
+    close(fd);
+}
+
+void *read_from_fifo() {
+    char buffer[BUFFER_SIZE];
+    int fd = open(FIFO_NAME, O_RDONLY);
+    if (fd == -1) {
+        fd = open(FIFO_NAME, O_RDONLY);
+    }
+    while (1) {
+        ssize_t bytes_read = read(fd, buffer, sizeof(buffer) - 1);
+        if (bytes_read > 0) {
+            buffer[bytes_read] = '\0';
+            PRINTF("Korzen odebral przez FIFO: %s\n", buffer);
+        }
+        pthread_mutex_lock(&read_lock);
+        if(read_files){
+            pthread_mutex_unlock(&read_lock);
+        }else{
+            pthread_mutex_unlock(&read_lock);
+            break;
+        }
+    }
+    close(fd);
+    pthread_exit(NULL);
+}
 
 struct msgContents
 {
@@ -51,11 +116,19 @@ int calc_node_messages_limit(int nid, int levels)
     return (pow(3, levels - current_lvl) * 10);
 }
 
+
 void root(int levels)
 {
+    create_fifo();
+    pthread_t reader_thread;
+    pthread_mutex_init(&read_lock, NULL);
+
+    pthread_create(&reader_thread, NULL, read_from_fifo, NULL);
+
+
     int messageQueIds[3];
     int totalMessages = 0;
-    int messagesToReceive = levels * 30;
+    int messagesToReceive = (pow(3, levels) * 10);
     for (int i = 0; i < 3; i++)
     {
         messageQueIds[i] = init_msgq(i + 1);
@@ -73,6 +146,10 @@ void root(int levels)
     {
         close_msgq(messageQueIds[i]);
     }
+    pthread_mutex_lock(&read_lock);
+        read_files = false;
+    pthread_mutex_unlock(&read_lock);
+    unlink(FIFO_NAME);
     PRINTF("Korzen konczy prace\n");
 }
 
@@ -105,7 +182,7 @@ void node(int id, int levels)
     {
         close_msgq(childrenMsgQueIds[i]);
     }
-    PRINTF("Node %d konczy prace\n", id);
+    write_to_fifo(format_string("Node %d konczy prace, odebranych wiadomosci: %d\n", id, totalMessages));
 }
 
 void leaf(int id)
@@ -120,12 +197,12 @@ void leaf(int id)
         msgsnd(parentQueId, &msg, sizeof(msg), 0);
         PRINTF("Lisc %d wysyla: %d\n", id, i);
     }
-    PRINTF("Lisc %d spadl\n", id);
+    write_to_fifo(format_string("Lisc %d spadl\n", id));
 }
 
 int main(int argc, char *argv[])
-{
-    int levels = 0;
+{   
+    int levels;
     if (argc != 3)
     {
         levels = 2;
