@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 levels=2
 debug=false
 
@@ -43,7 +44,7 @@ do
     num_times=${nodes_on_level[$((i-1))]}
     for (( j=0; j<num_times; j++ ))
     do
-        ./Proj_2 "$current_id" "$1" &
+        ./Proj_2 "$current_id" "$levels" &
         current_id=$((current_id + 1))
     done
 done

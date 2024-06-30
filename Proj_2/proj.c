@@ -119,6 +119,8 @@ int calc_node_messages_limit(int nid, int levels)
 
 void root(int levels)
 {
+
+    PRINTF("Korzen zyje\n");
     create_fifo();
     pthread_t reader_thread;
     pthread_mutex_init(&read_lock, NULL);
@@ -135,17 +137,19 @@ void root(int levels)
     }
     while (totalMessages < messagesToReceive)
     {
+        SLEEP(1);
         for (int i = 0; i < 3; i++)
         {
             msgrcv(messageQueIds[i], &msg, sizeof(msg), 1L, 0);
             totalMessages++;
-            PRINTF("Korzen odebral wiadomosc: %d\n", msg.number);
+            PRINTF("Korzen odebral wiadomosc: %d\n", msg.number); 
         }
     }
     for (int i = 0; i < 3; i++)
     {
         close_msgq(messageQueIds[i]);
     }
+    SLEEP(1);
     pthread_mutex_lock(&read_lock);
         read_files = false;
     pthread_mutex_unlock(&read_lock);
@@ -158,6 +162,7 @@ void node(int id, int levels)
     int childrenIds[3];
     int childrenMsgQueIds[3];
     int parentQueId = init_msgq(id);
+    PRINTF("node %d idq: %d\n", id, parentQueId);
     int totalMessages = 0;
     int messagesToReceive = calc_node_messages_limit(id, levels);
 
@@ -170,6 +175,7 @@ void node(int id, int levels)
     }
     while (totalMessages < messagesToReceive)
     {
+        SLEEP(1);
         for (int i = 0; i < 3; i++)
         {
             msgrcv(childrenMsgQueIds[i], &msg, sizeof(msg), 1L, 0);
