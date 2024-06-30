@@ -1,6 +1,8 @@
 
 # Script to kill all processes matching the pattern "Proj"
 
+ipcrm --all=msg
+
 # Find all processes matching the pattern "Proj" and extract their PIDs
 pids=$(ps aux | grep 'Proj' | grep -v 'grep' | awk '{print $2}')
 
