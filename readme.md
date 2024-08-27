@@ -11,12 +11,9 @@ Repozytorium przeznaczone projektom na przedmiot ZSO realizowanego w ramach nauk
 
 ## Postęp
 
-- Projekt 1- W trakcie
+- Projekt 1- Ukończony (Wynik: 80%; Ocena: 4,5)
 
-- Projekt 2- TBA
-
-- Projekt 3- TBA
-
+- Projekt 2- Ukończony (Wynik: 80%; Ocena: 4,5)
 
 ## Szczegóły
 Szczegóły dotyczące uruchomienia i działania projektów znajdują się w folderach im odpowiadających
